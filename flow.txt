@@ -1,0 +1,30 @@
+studyflow/
+  prisma/
+    schema.prisma
+  src/
+    app/
+      layout.tsx
+      page.tsx              # dashboard / list tasks
+      tasks/
+        new/page.tsx        # create task
+        [id]/
+          page.tsx          # view/update/delete task
+      api/
+        tasks/
+          route.ts          # POST (create) + GET (list)
+        tasks/[id]/
+          route.ts          # GET one, PATCH, DELETE
+        ai/plan/route.ts    # optional AI feature
+    lib/
+      prisma.ts
+      validation.ts
+      api-helpers.ts
+    components/
+      TaskForm.tsx
+      TaskList.tsx
+      LayoutShell.tsx
+  .env
+  package.json
+  tailwind.config.js
+  tsconfig.json
+  next.config.mjs
